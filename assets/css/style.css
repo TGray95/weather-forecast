@@ -48,3 +48,11 @@ li {
 #city-input {
     margin-right: 10px;
 }
+
+img {
+    height:200px
+}
+
+.hide {
+    display:none;
+}

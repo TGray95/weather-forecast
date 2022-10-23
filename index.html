@@ -15,7 +15,8 @@
         </div>
     </header>
     <main>
-        <wrapper class="row">
+        <wrapper class="container">
+            <div class="row">
             <div id="location" class="col-3 d-flex justify-content-center">
                 <div id="city-selector" class="col justify-space-between">
                     <h2>Search for a City</h2>
@@ -27,32 +28,105 @@
             </div>
             <div id="current-conditions" class="col-3 vstack gap-2">
                
-                    <p id="current-city">sdf</p> 
+                    <p id="current-city"></p> 
                     <wrapper class="col d-flex justify-content-center">
                     <ul>
                         <li><img id='icon' src=''></li>
-                        <li id="current-temp">sdf</li>
-                        <li id="current-wind">sdf</li>
-                        <li id="current-humidity">sdf</li>
+                        <li id="current-temp"></li>
+                        <li id="current-wind"></li>
+                        <li id="current-humidity"></li>
                     </ul>
+                </div>
                 </wrapper>
             </div>
         </wrapper>
         <div id="spacing" class="row"></div>
-        <div class="row justify-content-center">
-            <div id="five-day" class="col d-flex justify-content-center">
-                <h3>5-Day Forecast</h3>
-                <div id="daily-weather" class="row">
-                    <div id="day-one"></div>
-                    <div id="day-two"></div>
-                    <div id="day-three"></div>
-                    <div id="day-four"></div>
-                    <div id="day-five"></div>
+
+
+
+
+        
+        <div id="five-day" class="container">
+            <h3>5-Day Forecast</h3>
+            <div id="daily-weather">
+                <div id="cards" class="container hide">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card">
+                                
+              
+                                <div class="card-body">
+                                    <h5 id="date-1" class="card-title">Card title</h5>
+                                    <img id="icon-day-1" src="" alt="">
+                                    <p id="temp-1" class="card-text"></p>
+                                    <p id="wind-1" class="card-text"></p>
+                                    <p id="hum-1" class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card">
+                                
+              
+                                <div class="card-body">
+                                    <h5 id="date-2" class="card-title">Card title</h5>
+                                    <img id="icon-day-2" src="" alt="">
+                                    <p id="temp-2" class="card-text"></p>
+                                    <p id="wind-2" class="card-text"></p>
+                                    <p id="hum-2" class="card-text"></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card">
+                               
+              
+                                <div class="card-body">
+                                    <h5 id="date-3" class="card-title">Card title</h5>
+                                    <img id="icon-day-3" src="" alt="">
+                                    <p id="temp-3" class="card-text"></p>
+                                    <p id="wind-3" class="card-text"></p>
+                                    <p id="hum-3" class="card-text"></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h5 id='date-4' class="card-title">Card title</h5>
+                                    <img id="icon-day-4" src="" alt="">
+                                    <p id="temp-4" class="card-text"></p>
+                                    <p id="wind-4" class="card-text"></p>
+                                    <p id="hum-4" class="card-text"></p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card">
+                               
+              
+                                <div class="card-body">
+                                    <h5 id='date-5' class="card-title">Card title</h5>
+                                    <img id="icon-day-5" src="" alt="">
+                                    <p id="temp-5" class="card-text"></p>
+                                    <p id="wind-5" class="card-text"></p>
+                                    <p id="hum-5" class="card-text"></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="./assets/javascript/script.js"></script>
+
 </html>
