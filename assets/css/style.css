@@ -1,0 +1,50 @@
+.alert {
+    height: 200px;
+}
+
+h1 {
+    padding-top: 50px;
+}
+
+#location {
+    margin-left: 50px;;
+}
+
+#current-conditions {
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+    background-color: lightgray;
+}
+
+#five-day {
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#spacing {
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+#current-city {
+    font-size: 80px;
+}
+
+#search-wrap {
+    margin-top: 50px;
+    display:flex;
+}
+
+#city-input {
+    margin-right: 10px;
+}
