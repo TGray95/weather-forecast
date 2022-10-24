@@ -11,6 +11,8 @@ var dailyTemps = ['temp-1', 'temp-2', 'temp-3', 'temp-4', 'temp-5'];
 var dailyWind = ['wind-1', 'wind-2', 'wind-3', 'wind-4', 'wind-5'];
 var dailyHumidity = ['hum-1', 'hum-2', 'hum-3', 'hum-4', 'hum-5'];
 var citySelection = $('#city-input').val();
+
+
 function setHistory() {
     var history = currentCity.innerHTML;
     var savedHistory = JSON.parse(localStorage.getItem('allHistory')) || [];
@@ -49,7 +51,7 @@ function getHistory() {
         
         if (citySelection === '') { return }
     document.getElementById('five-day').classList.remove('hide')
-        var geoApi = 'http://api.openweathermap.org/geo/1.0/direct?q='+citySelection+',US&limit=1&appid=44ff41a4d8b49abe43f662ec93cbb1a6';
+        var geoApi = 'https://api.openweathermap.org/geo/1.0/direct?q='+citySelection+',US&limit=1&appid=44ff41a4d8b49abe43f662ec93cbb1a6';
         console.log(citySelection);
         
         fetch(geoApi)
@@ -135,3 +137,8 @@ $('#city-search').on('click', function () {
          
 
 })
+
+$('#clear').on('click', function () {
+    localStorage.clear()
+    location.reload()
+        })
