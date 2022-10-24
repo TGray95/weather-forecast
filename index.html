@@ -15,19 +15,21 @@
         </div>
     </header>
     <main>
-        <wrapper class="container">
+        <wrapper class="container col-3">
             <div class="row">
             <div id="location" class="col-3 d-flex justify-content-center">
                 <div id="city-selector" class="col justify-space-between">
                     <h2>Search for a City</h2>
-                    <wrapper id="search-wrap">
+                    <wrapper class="vstack gap-3" id="search-wrap">
                         <input id="city-input" type="text" placeholder="ex. Fayetteville, NC">
-                        <button id="city-search">Search</button>
+                        <button class="btn btn-primary" id="city-search">Search</button>
+                        <div id="history" class="vstack gap-1">
+                        </div>
+                        <button id="clear" class="btn btn-danger">Clear History</button>
                     </wrapper>
                 </div>
             </div>
             <div id="current-conditions" class="col-3 vstack gap-2">
-               
                     <p id="current-city"></p> 
                     <wrapper class="col d-flex justify-content-center">
                     <ul>
@@ -41,19 +43,13 @@
             </div>
         </wrapper>
         <div id="spacing" class="row"></div>
-
-
-
-
-        
-        <div id="five-day" class="container">
+        <div id="five-day" class="container hide">
             <h3>5-Day Forecast</h3>
             <div id="daily-weather">
-                <div id="cards" class="container hide">
+                <div id="cards" class="container">
                     <div class="row">
                         <div class="col-lg-6 mb-4">
                             <div class="card">
-                                
               
                                 <div class="card-body">
                                     <h5 id="date-1" class="card-title">Card title</h5>
@@ -66,7 +62,6 @@
                         </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card">
-                                
               
                                 <div class="card-body">
                                     <h5 id="date-2" class="card-title">Card title</h5>
@@ -81,7 +76,6 @@
                         <div class="col-lg-6 mb-4">
                             <div class="card">
                                
-              
                                 <div class="card-body">
                                     <h5 id="date-3" class="card-title">Card title</h5>
                                     <img id="icon-day-3" src="" alt="">
@@ -108,7 +102,6 @@
                         <div class="col-lg-6 mb-4">
                             <div class="card">
                                
-              
                                 <div class="card-body">
                                     <h5 id='date-5' class="card-title">Card title</h5>
                                     <img id="icon-day-5" src="" alt="">
