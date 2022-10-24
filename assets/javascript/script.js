@@ -102,7 +102,7 @@ function getHistory() {
             function getCurrent() {
                 var currentApi = 'https://api.openweathermap.org/data/2.5/weather?lat='+cityLat+'&lon='+cityLon+'&units=imperial&appid=44ff41a4d8b49abe43f662ec93cbb1a6'
                 fetch(currentApi) 
-            .then(function (response) {y
+            .then(function (response) {
                 return response.json();
             })
             .then(function (data) {
